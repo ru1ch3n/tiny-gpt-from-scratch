@@ -94,7 +94,7 @@ import numpy as np
 def get_array_dtype(arr):
     """Return the dtype of a NumPy array."""
     # TODO: return the dtype attribute of arr
-    return np.dtype(arr)
+    return arr.dtype
     pass
 
 # Step 11 - make_2d_zeros (not yet solved)
