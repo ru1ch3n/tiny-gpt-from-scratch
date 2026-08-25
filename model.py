@@ -496,8 +496,14 @@ def decode_generated_sequence(ids, itos):
     return "".join([itos[i] for i in ids])
     pass
 
-# Step 54 - log_prob_of_pair (not yet solved)
-# TODO: implement
+# Step 54 - log_prob_of_pair
+def log_prob_of_pair(p_matrix, current_id, next_id):
+    """Return the log probability of a single (current, next) bigram."""
+    # TODO: pick out P[current_id, next_id] and return its natural log
+    arr = np.array(p_matrix[current_id, next_id])
+
+    return array_log(arr)
+    pass
 
 # Step 55 - sum_negative_log_probs (not yet solved)
 # TODO: implement
